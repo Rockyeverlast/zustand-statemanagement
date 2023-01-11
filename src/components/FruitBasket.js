@@ -11,6 +11,7 @@ let store = (set) => ({
   },
 });
 
+// Adding store to localStorage
 store = persist(store, { name: "basket" });
 
 const useStore = create(store);
